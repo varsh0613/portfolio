@@ -510,7 +510,7 @@ export default function Home() {
         .ba:hover{background:${col.ah};border-color:${col.ah}}
         .bo{border-color:rgba(91,136,178,.7)}
 
-        .hero-shell{position:relative;border:1px solid ${col.border};background:rgba(255,247,230,.08);border-radius:30px;padding:28px;box-shadow:0 22px 58px rgba(6,8,16,.34)}
+        .hero-shell{position:relative;border:1px solid ${col.border};background:rgba(255,247,230,.08);border-radius:28px;padding:24px;box-shadow:0 22px 58px rgba(6,8,16,.34)}
         .r.personal .hero-shell{
           background:rgba(255,247,230,.12);
           border-color:rgba(91,136,178,.5);
@@ -534,9 +534,9 @@ export default function Home() {
         }
         .hero-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(240,231,213,.09);border:1px solid ${col.border};font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:${col.txt2};font-weight:700}
         .h{margin-top:16px;display:grid;grid-template-columns:1fr;gap:24px}
-        .h1{font-family:Cambria,Georgia,"Times New Roman",serif;font-size:clamp(44px,7.2vw,68px);line-height:1.04;margin:12px 0 0;letter-spacing:0}
-        .h2{margin:12px 0 0;font-size:27px;line-height:1.2;color:${col.txt2};font-family:Cambria,Georgia,"Times New Roman",serif}
-        .lead{margin:18px 0 0;color:${col.txt2};line-height:1.72;font-size:20px;max-width:65ch}
+        .h1{font-family:Cambria,Georgia,"Times New Roman",serif;font-size:clamp(40px,6.7vw,62px);line-height:1.06;margin:10px 0 0;letter-spacing:0}
+        .h2{margin:10px 0 0;font-size:24px;line-height:1.2;color:${col.txt2};font-family:Cambria,Georgia,"Times New Roman",serif}
+        .lead{margin:16px 0 0;color:${col.txt2};line-height:1.68;font-size:18px;max-width:64ch}
         .personal-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:rgba(91,136,178,.16);border:1px solid rgba(91,136,178,.45);color:${col.txt2};max-width:62ch}
         .chips{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
         .chip{font-size:14px;padding:8px 11px;border-radius:999px;border:1px solid ${col.border};color:${col.txt2};background:rgba(240,231,213,.05)}
@@ -770,6 +770,22 @@ export default function Home() {
                   <div className="cta" style={{ marginTop: 12 }}><button className="b ba" onClick={() => setCaseId(pr.id)}>Case Study</button></div>
                 </article>
               ))}
+              <article
+                className="pr"
+                style={{
+                  borderColor: "rgba(91,136,178,.88)",
+                  boxShadow: "0 0 0 1px rgba(91,136,178,.36), 0 16px 30px rgba(0,0,0,.2)",
+                  background: "linear-gradient(180deg, rgba(91,136,178,.14), rgba(255,247,230,.05))",
+                  display: "grid",
+                  placeItems: "center",
+                  minHeight: 230,
+                  textAlign: "center",
+                }}
+              >
+                <h3 style={{ margin: 0, fontSize: 28, color: col.txt, fontFamily: "Cambria,Georgia,\"Times New Roman\",serif" }}>
+                  Major Project Coming Soon
+                </h3>
+              </article>
             </div>
           </section>}
 
