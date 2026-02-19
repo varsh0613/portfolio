@@ -729,7 +729,7 @@ export default function Home() {
                   {mode === "professional" && <div className="cta" style={{ marginTop: 12 }}>
                     <a className="socbtn" href="https://www.linkedin.com/in/s-varshitha-8962a6229/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn"/>LinkedIn</a>
                     <a className="socbtn" href="https://github.com/varsh0613" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="GitHub"/>GitHub</a>
-                    <a className="socbtn" href={resume} download>Download CV</a>
+                    <a className="socbtn" href={resume} download="Varshitha_Resume.pdf">Download CV</a>
                   </div>}
                 </div>
               </div>
