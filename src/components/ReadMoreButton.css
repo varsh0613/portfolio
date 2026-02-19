@@ -1,0 +1,92 @@
+.read-more-button {
+  position: relative;
+  width: 180px;
+  height: 56px;
+  border-radius: 118px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Orbit track for orb */
+.glow-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 118px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Glowing orb traveling around edge */
+.glow-orb {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+  border-radius: 50%;
+  filter: blur(10px) brightness(1.2);
+  offset-path: path("M90,28 A60,25 0 1,1 89.9,28z");
+  offset-rotate: 0deg;
+  animation: orbit 3s linear infinite;
+  mix-blend-mode: screen;
+}
+
+/* Inner fill */
+.inner-fill {
+  position: absolute;
+  inset: 3px;
+  border-radius: 110px;
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.read-more-text {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Hover animations */
+.read-more-button:hover .glow-orb {
+  animation-play-state: paused;
+  filter: blur(12px) brightness(1.8);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0.2) 90%);
+}
+
+/* Soft halo glow around button */
+.read-more-button:hover {
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.3),
+    0 0 25px 10px rgba(255,255,255,0.25),
+    0 0 45px 20px rgba(255,255,255,0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+/* NEW — White glowing border on hover */
+.read-more-button:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 118px;
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow:
+    0 0 8px rgba(255,255,255,0.8),
+    0 0 15px rgba(255,255,255,0.4);
+  z-index: 3;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes orbit {
+  0%   { offset-distance: 0%; }
+  100% { offset-distance: 100%; }
+}

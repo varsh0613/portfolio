@@ -1,0 +1,36 @@
+.project-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;          /* 🔹 adjust this for exact match to home page */
+  object-fit: cover;      /* ensures the image fills neatly */
+  border-bottom: 1px solid #eee;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #222;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 16px 16px;
+  line-height: 1.4;
+}

@@ -1,0 +1,38 @@
+.dashboard-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(200%); /* since we doubled the images */
+  animation: scroll 25s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 400px; /* adjust image width */
+  margin: 0 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Infinite horizontal scrolling effect */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

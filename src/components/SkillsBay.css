@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+.skills-bay-container {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skills-bay {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  color: #e0e6ff;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.category {
+  border: 1px solid #3b4b66;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(24, 30, 50, 0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category:hover {
+  background: rgba(35, 43, 68, 0.8);
+  transform: translateY(-2px);
+}
+
+.category h3 {
+  font-size: 1.2rem;
+  color: #bcd0ff;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.skills-list {
+  margin-top: 15px;
+  animation: fadeIn 0.4s ease;
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.skill-label {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #bfcdf8;
+}
+
+.bar {
+  flex: 3;
+  height: 8px;
+  background: #1a2238;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6f8dff, #8aa4ff, #6f8dff);
+  border-radius: 6px;
+  background-size: 200px 100%;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
