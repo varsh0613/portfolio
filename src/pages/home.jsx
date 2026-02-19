@@ -711,7 +711,7 @@ export default function Home() {
                   <p className="h2">{mode === "professional" ? "Business Analyst | Risk Analysis in Operations & Finance | Healthcare" : "Campus Leadership, Creative Work, and Social Impact"}</p>
                   <p className="lead">
                     {mode === "professional"
-                      ? "MBA Business Analytics candidate with hands-on experience in risk analysis for operations and finance, mostly across healthcare workflows, with controls-focused reporting, SOP documentation, dashboards, and SLA monitoring studies."
+                      ? "MBA Business Analytics candidate with hands-on experience in risk and performance analytics across government and healthcare projects. Built dashboards and reporting frameworks for controls, KPI tracking, and risk monitoring to support stakeholder decisions. Seeking roles in risk analytics, assurance, and data-driven decision support."
                       : "People-first learner and leader who enjoys mentoring, speaking, writing, and building ideas that blend creativity with impact, from campus initiatives to social work and storytelling."}
                   </p>
                   {mode === "personal" && (
